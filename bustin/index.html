@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./welcome.css" type="text/css" /> -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Zinema Movies and Theatres</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 400px;
+        margin: 20px auto;
+        display: grid;
+        position: relative;
+      }
+      div.image {
+        margin: 20px 0;
+        text-align: center;
+      }
+      object {
+        width: 100%;
+      }
+      div.content {
+        text-align: center;
+        display: grid;
+        row-gap: 30px;
+      }
+      a {
+        background: red;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        width: auto;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 30px;
+      }
+      a:hover {
+        background: whitesmoke;
+        border: 1px solid red;
+        color: red;
+      }
+      @media screen and (max-width: 500px) {
+        section {
+          margin: 10px auto;
+        }
+        div.image {
+          margin: 10px 0;
+        }
+        a {
+          padding: 10px;
+          font-size: 20px;
+          width: 50%;
+          justify-self: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="image">
+        <object data="../images/zinema.svg" type=""></object>
+      </div>
+      <div class="content">
+        <h4>Welcome to ZINEMA Movies and Theatres</h4>
+        <a href="./signin.html">Get Started</a>
+      </div>
+    </section>
+  </body>
+</html>
