@@ -29,6 +29,15 @@ div.form {
   position: relative;
   box-shadow: 0px 4px 16px 2px #00000014;
 }
+div.names {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+div.telephone {
+  display: grid;
+  grid-template-columns: 0.5fr 3.5fr;
+  column-gap: 15px;
+}
 div.input {
   display: grid;
   margin-top: 10px;
@@ -48,11 +57,16 @@ div.input > label {
   margin-bottom: 3px;
   text-align: left;
 }
-div.input > input {
+div.input > input,
+div.telephone > input,
+div.telephone > select {
   border: 1px solid #3a3a3a4d;
   outline: none;
   padding: 15px;
   border-radius: 10px;
+}
+div.telephone > select {
+  background: none;
 }
 div.form div.forget {
   text-align: right;
