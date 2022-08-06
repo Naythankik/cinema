@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./welcome.css" type="text/css" /> -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Zinema Movies and Theatres</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        margin: 150px auto;
+        width: 341px;
+        text-align: center;
+        padding: 5px;
+      }
+      div.image {
+        position: relative;
+      }
+      div.image > object:last-child {
+        position: absolute;
+        right: 22%;
+      }
+      h2 {
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 600;
+        color: red;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      span {
+        color: red;
+      }
+      input[type="radio"] {
+        accent-color: red;
+        margin: 0 5px;
+      }
+      a {
+        text-decoration: none;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+        background: #f63131;
+        padding: 10px 20px;
+        position: absolute;
+        right: 30%;
+        bottom: 15%;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 500px) {
+        section {
+          margin: 100px auto;
+        }
+        p {
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+
+        a {
+          bottom: 10px;
+          right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="image">
+        <object data="../images/gold_premium.svg" type=""></object>
+        <object data="../images/new_releases.png" type=""></object>
+      </div>
+      <h2>LATEST TRENDING MOVIES</h2>
+      <p>
+        <span>Book</span> and get your ticket of the <span>latest</span>, newly
+        released and trending <span>movies</span> here.
+      </p>
+
+      <form action="#" name="sliders" id="radio-slider">
+        <input type="radio" name="slider" checked />
+        <input type="radio" name="slider" />
+        <input type="radio" name="slider" />
+        <input type="radio" name="slider" />
+      </form>
+      <a href="#">Next</a>
+    </section>
+  </body>
+</html>
