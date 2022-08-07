@@ -10,6 +10,10 @@
       href="../images/favicon_io/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Zinema Movies and Theatres</title>
     <style>
       @media screen and (max-width: 500px) {
@@ -29,6 +33,49 @@
         div.user {
           width: 18%;
         }
+
+        /* mobile view for catalogue section */
+        section {
+          height: 100vh;
+          margin: 0 auto;
+          overflow-y: scroll;
+          width: 100%;
+        }
+        section::-webkit-scrollbar {
+          width: 2px;
+        }
+        section::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background: red;
+        }
+
+        section::-webkit-scrollbar-track {
+          border-radius: 10px;
+          background: grey;
+        }
+        section .movie-catalogue {
+          width: 43%;
+        }
+
+        .movie-catalogue > p {
+          font-weight: 600;
+        }
+        .movie-catalogue > button {
+          font-weight: 300;
+        }
+
+        /* mobile view for catalogue footer*/
+        footer {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          bottom: -80px;
+        }
+
+        /* 
+       
+       
+         */
       }
     </style>
   </head>
@@ -57,5 +104,135 @@
         <div class="user"></div>
       </div>
     </nav>
+
+    <section>
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie1.jpg" alt="" />
+        </a>
+        <p>The Man From Toronto</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie2.jpg" alt="" />
+        </a>
+        <p>The Gray Man</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie4.jpeg" alt="" />
+        </a>
+        <p>Glamour Girls</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie5.jpg" alt="" />
+        </a>
+        <p>Stranger Things</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie6.jpg" alt="" />
+        </a>
+        <p>Interceptor</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie3.jpeg" alt="" />
+        </a>
+        <p>My Village People</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie7.png" alt="" />
+        </a>
+        <p>Sea Beast</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie8.jpeg" alt="" />
+        </a>
+        <p>black crab</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie9.png" alt="" />
+        </a>
+        <p>the adam project</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie10.jpeg" alt="" />
+        </a>
+        <p>anek</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie11.jpeg" alt="" />
+        </a>
+        <p>Hotel transylvania : transformania</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie12.jpeg" alt="" />
+        </a>
+        <p>Hello, Goodbye and Everything in Between</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+
+      <div class="movie-catalogue">
+        <a href="#">
+          <img src="../images/movie13.jpeg" alt="" />
+        </a>
+        <p>A Madea Homecoming</p>
+        <button type="button">Buy Tickets</button>
+      </div>
+    </section>
+
+    <footer>
+      <button>
+        <i class="fa fa-camera"></i>
+        <p>In Theatres</p>
+      </button>
+      <button>
+        <i class="fa fa-arrow-up"></i>
+        <p>Upcoming</p>
+      </button>
+      <button>
+        <i class="fa fa-home"></i>
+        <p>Theatres</p>
+      </button>
+
+      <button>
+        <i class="fa fa-bullhorn"></i>
+        <p>News</p>
+      </button>
+      <button>
+        <i class="fa fa-gear"></i>
+        <p>Settings</p>
+      </button>
+    </footer>
   </body>
 </html>

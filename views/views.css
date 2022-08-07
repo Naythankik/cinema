@@ -6,6 +6,9 @@
 a {
   text-decoration: none;
 }
+body {
+  position: relative;
+}
 
 nav {
   width: 95%;
@@ -43,15 +46,15 @@ div.menu > a {
   width: 19%;
   text-align: center;
   outline: none;
-  border: 1px solid red;
   font-size: 18px;
-  color: black;
+  color: grey;
+  font-weight: 600;
 }
 div.menu > a:hover {
-  background: red;
   width: 20%;
   font-size: 20px;
-  color: white;
+  background: none;
+  box-shadow: 1px 1px 10px 1px red;
 }
 
 div.search {
@@ -63,7 +66,7 @@ div.search input {
   border-radius: 10px;
   width: 60%;
   outline: none;
-  border: 1px solid red;
+  border: 1px solid grey;
 }
 div.search button {
   padding: 10px;
@@ -77,8 +80,8 @@ div.search button {
 }
 div.search button:hover {
   background: white;
-  border: 1px solid red;
   color: black;
+  box-shadow: 1px 1px 10px 1px red;
 }
 div.user {
   width: 5%;
@@ -88,4 +91,107 @@ div.user {
   background-size: 100% 100%;
   border-radius: 100%;
   cursor: pointer;
+}
+
+/* the body of catalogue */
+section {
+  padding: 10px;
+  background: none;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+section::-webkit-scrollbar-thumb {
+  width: 20%;
+}
+section::-webkit-scrollbar-track {
+  background: red;
+}
+
+section .movie-catalogue {
+  width: 18.6%;
+  background: none;
+  text-align: center;
+  margin: 10px;
+  padding: 5px 0;
+}
+.movie-catalogue > a {
+  text-decoration: none;
+  background: none;
+}
+
+.movie-catalogue > a img {
+  width: 100%;
+  background: none;
+  border-radius: 10px;
+  outline: 1px solid grey;
+}
+
+.movie-catalogue > p {
+  color: grey;
+  text-transform: capitalize;
+  background: none;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie-catalogue > button {
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 600;
+  width: 90%;
+  border-radius: 10px;
+}
+.movie-catalogue > button:hover {
+  background: white;
+  box-shadow: 1px 1px 10px -2px red;
+  color: red;
+}
+
+footer {
+  display: none;
+  background: whitesmoke;
+  width: 100%;
+  padding: 10px 15px;
+  gap: 5px;
+  border-radius: 10px;
+}
+footer button {
+  background: none;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+footer button:hover {
+  box-shadow: 1px 1px 10px -1px red;
+}
+
+footer button > p {
+  color: grey;
+  background: none;
+  white-space: nowrap;
+  font-size: 1em;
+  font-weight: 200;
+  margin: 10px 0;
+}
+footer button > i {
+  color: grey;
+  font-size: 1.9em;
+  background: none;
+  font-weight: bolder;
 }
