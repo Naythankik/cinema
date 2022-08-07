@@ -12,13 +12,11 @@
     />
     <title>Zinema Movies and Theatres</title>
     <style>
-        @media screen and (max-width:500px){
-           div.names > div.input > input{
-            width: 100%;
-           }
-           
-           
-        }
+      body {
+        position: relative;
+        text-align: center;
+        height: 100vh;
+      }
     </style>
   </head>
   <body>
@@ -36,7 +34,6 @@
                 placeholder="Enter your first name"
               />
             </div>
-
             <div class="input">
               <label for="last_name">Last Name</label>
               <input
@@ -55,33 +52,31 @@
               id="username"
               placeholder="Enter your username"
             />
-
-            <div class="input">
-                <label for="telephone">Mobile number</label>
-                <div class="telephone">
-                    <select name="code" id="code">
-                        <option value="234">+234</option>
-                        <option value="233">+233</option>
-                        <option value="235">+235</option>
-                        <option value="236">+236</option>
-                        <option value="223">+223</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-                        <option value="234">+234</option>
-
-                    </select>
-                    <input
-                  type="text"
-                  name="telephone"
-                  id="telephone"
-                  placeholder="Enter mobile number"
-                />
-                </div>
-
+          </div>
+          <div class="input">
+            <label for="telephone">Mobile number</label>
+            <div class="telephone">
+              <select name="code" id="code">
+                <option value="234">+234</option>
+                <option value="233">+233</option>
+                <option value="235">+235</option>
+                <option value="236">+236</option>
+                <option value="223">+223</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+                <option value="234">+234</option>
+              </select>
+              <input
+                type="text"
+                name="telephone"
+                id="telephone"
+                placeholder="Enter mobile number"
+              />
+            </div>
           </div>
           <div class="input">
             <label for="email">Email</label>
@@ -92,7 +87,6 @@
               placeholder="Enter email address"
             />
           </div>
-
           <div class="input">
             <label for="password">Password</label>
             <input
@@ -102,11 +96,12 @@
               placeholder="Enter your password"
             />
           </div>
-
           <button type="submit">Sign Up</button>
         </form>
       </div>
-      <p>Already have an account? <a href="./signin.html">Sign In!</a></p>
     </main>
+    <p class="signin">
+      Already have an account? <a href="./signin.html">Sign In!</a>
+    </p>
   </body>
 </html>

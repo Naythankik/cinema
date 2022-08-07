@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+div.logo {
+  width: 5%;
+  text-align: center;
+  height: auto;
+}
+
+div.logo img {
+  width: 100%;
+}
+
+div.navigator {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 20px 0;
+}
+
+div.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+div.menu > a {
+  padding: 10px;
+  border-radius: 10px;
+  width: 19%;
+  text-align: center;
+  outline: none;
+  border: 1px solid red;
+  font-size: 18px;
+  color: black;
+}
+div.menu > a:hover {
+  background: red;
+  width: 20%;
+  font-size: 20px;
+  color: white;
+}
+
+div.search {
+  width: 30%;
+}
+
+div.search input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  outline: none;
+  border: 1px solid red;
+}
+div.search button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  background: red;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+div.search button:hover {
+  background: white;
+  border: 1px solid red;
+  color: black;
+}
+div.user {
+  width: 5%;
+  height: auto;
+  background-image: url("../images/profile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  cursor: pointer;
+}

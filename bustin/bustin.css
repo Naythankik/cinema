@@ -10,20 +10,17 @@ main {
   text-align: center;
   position: relative;
 }
-main > p:last-child {
-  margin-top: 20px;
-}
 p.title {
-  margin: 10px 0;
+  margin: 20px 0;
   font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
   line-height: 29px;
   text-align: center;
 }
 div.form {
   padding: 20px;
-  width: 40%;
+  width: 50%;
   margin: 10px auto;
   border-radius: 10px;
   position: relative;
@@ -33,6 +30,7 @@ div.names {
   display: grid;
   grid-template-columns: auto auto;
 }
+
 div.telephone {
   display: grid;
   grid-template-columns: 0.5fr 3.5fr;
@@ -64,10 +62,10 @@ div.telephone > select {
   outline: none;
   padding: 15px;
   border-radius: 10px;
-}
-div.telephone > select {
+  width: 100%;
   background: none;
 }
+
 div.form div.forget {
   text-align: right;
   margin: 10px auto;
@@ -117,18 +115,31 @@ div.keep-me > label {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  div.form {
+    width: 95%;
+  }
+  div.telephone > select {
+    padding: 0;
+    width: auto;
+  }
+}
 @media screen and (max-width: 500px) {
   main {
-    height: 90vh;
     margin: 5px auto;
   }
   div.form {
     width: 100%;
   }
-  main > p:last-child {
+
+  div.telephone > select {
+    padding: 0;
+    width: auto;
+  }
+
+  .signin {
     position: absolute;
-    bottom: 0;
-    text-align: center;
+    bottom: 20px;
     width: 100%;
   }
 }
